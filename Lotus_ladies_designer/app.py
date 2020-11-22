@@ -47,7 +47,7 @@ def send_email_cl(name,email):
 @app.route("/",methods=['GET','POST'] )
 def home():
     if request.method == 'GET':
-        return render_template("index.html",next_link="#Contact")
+        return render_template("index.html")
     elif request.method == 'POST':
         session['DATA'] = request.form
         name = session['DATA']['name']
