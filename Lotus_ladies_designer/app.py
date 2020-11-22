@@ -8,9 +8,9 @@ def send_email(message):
         smtp_ssl_host = 'smtp.gmail.com'  # smtp.mail.yahoo.com
         smtp_ssl_port = 465
         username = 'lotusladiesdesigners@gmail.com'
-        password = 'zfidcwkbpjnzsent'
+        password = 'PASSWORD'
         sender = 'lotusladiesdesigners@gmail.com'
-        targets = 'shakeelsudha@gmail.com'
+        targets = 'MAIL_ID'
         msg = MIMEText('Message : {}'.format(message))
         msg['Subject'] = 'User Message'
         msg['From'] = sender
@@ -29,7 +29,7 @@ def send_email_cl(name,email):
         smtp_ssl_host = 'smtp.gmail.com'  # smtp.mail.yahoo.com
         smtp_ssl_port = 465
         username = 'lotusladiesdesigners@gmail.com'
-        password = 'zfidcwkbpjnzsent'
+        password = 'PASSWORD'
         sender = 'lotusladiesdesigners@gmail.com'
         targets = email
         msg = MIMEText('Thanks, {} For Choosing us...'.format(name))
